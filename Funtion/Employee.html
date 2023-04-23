@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Tosalary=0
+        var crdsalary=0
+
+        function Employee(name, age, gender, address){
+            info1=name
+            info2=age
+            info4=gender
+            info5=address
+            console.log("Name:"+info1+" "+"Age:"+info2+" "+" "+"Gender:"+info4+" "+"Address:"+info5)
+        }
+
+        Employee("Hari",30,"male","1234 Street ch")
+
+        function salary(x){
+            Tosalary=x
+            console.log("Given salary:"+Tosalary)
+        }
+
+        salary(40000)
+
+        function position(){
+            if(Tosalary>5000 && Tosalary<=10000){
+                console.log("Post:Office cleaners")
+            }
+            if(Tosalary>10000 && Tosalary<=15000){
+                console.log("Post:Entry level  staff")
+            }
+            if(Tosalary>15000 && Tosalary<=20000){
+                console.log("Post:Technician Level:01")
+            }
+            if(Tosalary>20000 && Tosalary<=30000){
+                console.log("Post:Technician Level:02")
+            }
+            if(Tosalary>30000 && Tosalary<=50000){
+                console.log("Post:Ass.,Manager")
+            }
+            if(Tosalary>50000 && Tosalary<=100000){
+                console.log("Post:Chief Manager")
+            }
+
+        }
+        position()
+
+
+        function redsalary(allowance, bf){
+            workallowance=allowance
+            employeementbf=bf
+            crdsalary=Tosalary-(allowance+bf)
+            console.log("Your given salary is"+ " " +Tosalary+" "+"After allowance and bf has been debited:" + " "+crdsalary)
+        }
+
+        redsalary(400,1000)
+
+        
+
+    </script>
+</body>
+</html>

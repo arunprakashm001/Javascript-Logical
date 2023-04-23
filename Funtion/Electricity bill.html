@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function EB(unit){
+            prc=unit
+            if(prc>100 && prc<=200){
+                console.log("Payable amount is 150Rs")
+            }
+            else if(prc>200 && prc<=300){
+                console.log("Payable amount is 417Rs")
+            }
+            else if(prc>300 && prc<=400){
+                console.log("Payable amount is 757rs")
+            }
+            else if(prc>400 && prc<=500){
+                console.log("Payable amount is 800Rs")
+            }
+            else if(prc>500 && prc<=600){
+                console.log("Payable amount is  1000Rs")
+            }
+            else if(prc>600 && prc<=700){
+                console.log("Payable amount is 2500Rs")
+            }
+        }
+
+        EB(590)
+
+        function Checkingage(just){
+            age=just
+        if(age>=1 && age<=5){
+            console.log("infants");
+        }
+        else if(age>5 && age<=10){
+            console.log("Primary school students");
+        }
+        else if(age>10 && age<=14){
+            console.log("6th to 9th  class Hr sec students");
+        }
+        else if(age==15){
+            console.log("10th public exam students");
+        }
+        else if(age>15 && age<=18){
+            console.log("11th and 12th class public  exam students");
+        }
+        else if(age>18 && age<=22){
+            console.log("college UG students ");
+        }
+        else if(age>22 && age<=26){
+            console.log("college PG students ");
+        }
+        else if(age>30 && age<=50){
+            console.log("Parents category")
+        }
+        else if(age>50 && age<=100){
+            console.log("Elder peoples")
+        }
+
+        }
+
+        Checkingage(40)
+
+    </script>
+</body>
+</html>

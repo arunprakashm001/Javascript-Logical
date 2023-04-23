@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var acticprc=400
+
+        function agewisebookingprice(name,fit,gender,pickuppointandtiming,dropingpoint,Hrs){
+            pasname=name
+            pasgender=gender
+            age=fit
+            paspoint=pickuppointandtiming
+            pasdrop=dropingpoint
+            trvhr=Hrs
+
+            fun1=acticprc/2
+            fun2=acticprc-100
+
+            console.log("PassengerName:"+pasname+" "+"PassengerAge:"+age+" "+"Gender:"+pasgender+" "+"Pickuppoint:"+paspoint+" "+"Dropingpoint:"+pasdrop+" "+"Journey Hrs:"+trvhr)
+
+            if(age>=1 && age<4){
+                console.log("No need to pay : infants")
+            }
+            else if(age>=4 && age<10){
+                console.log("Actual tic.price is:"+acticprc+"Rs/-"+" "+"For child, Half amount:"+fun1+"Rs/-")
+            }
+            else if(age>=10 && age<18){
+                console.log("No need to pay : school students")
+            }
+            else if(age>=18 && age<60){
+                console.log("General category and the ticket price is:"+acticprc+"Rs/-")
+            }
+            else if(age>=60 && age<100){
+                console.log("Actual tic.price is:"+acticprc+"Rs/-"+" "+"For Elder category:"+fun2+"Rs/-")
+            }
+        }
+
+        agewisebookingprice("sibi",45,"male","Chennai Time:20:00;","Coimbatore","9Hrs")
+
+
+
+    </script>
+</body>
+</html>

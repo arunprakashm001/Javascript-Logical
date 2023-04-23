@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Employee(name, age, gender, address){
+            info1=name
+            info2=age
+            info4=gender
+            info5=address
+            console.log("Name:"+info1+" "+"Age:"+info2+" "+" "+"Gender:"+info4+" "+"Address:"+info5)
+        }
+
+        Employee("veeresh",40,"male","11th Street Madurai")
+
+        function salary(x){
+            Tosalary=x
+            return Tosalary
+        }
+        var res=salary(48589)
+        console.log("Salary:"+res)
+
+        function position(){
+            if(res>5000 && res<=10000){
+                console.log("Post:Office cleaners")
+            }
+            if(res>10000 && res<=15000){
+                console.log("Post:Entry level  staff")
+            }
+            if(res>15000 && res<=20000){
+                console.log("Post:Technician Level:01")
+            }
+            if(res>20000 && res<=30000){
+                console.log("Post:Technician Level:02")
+            }
+            if(res>30000 && res<=50000){
+                console.log("Post:Ass.,Manager")
+            }
+            if(res>50000 && res<=100000){
+                console.log("Post:Chief Manager")
+            }
+
+        }
+        position()
+
+    </script>
+</body>
+</html>

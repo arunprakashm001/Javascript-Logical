@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function reservation(Name,age,seatno,capacity,ticketprice,){
+            pasname=Name
+            pasage=age
+            passeatno=seatno
+            pascapacity=capacity
+            pasticketprice=ticketprice
+
+
+            if (pascapacity>=1 && pascapacity<=42){
+                console.log("Your ticket booking is under process") 
+            }
+            else{
+                console.log("Ticket is not availabel")
+            }
+
+
+            console.log("passenger name:"+pasname+" "+"Age:"+pasage+" "+"SeatNo:"+passeatno+" "+"Tic.Price:"+pasticketprice)
+        }
+
+        reservation("kumar",40,"21B",32,"450Rs")
+
+    </script>
+</body>
+</html>

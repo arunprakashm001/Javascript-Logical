@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var total=0
+        var avg=0
+
+        function studentsmarks(sub1, sub2, sub3, sub4, sub5){
+            tamil=sub1
+            eng=sub2
+            math=sub3
+            sci=sub4
+            ssci=sub5
+            total=tamil+eng+math+sci+ssci
+            console.log(total)
+        }
+
+        studentsmarks(90,95,92,96,93)
+
+        function average(){
+            
+            ave=total/5
+            console.log(ave)
+        }
+        average()
+
+        function grade(){
+            
+            if(ave<=100 && ave>=90){
+                console.log(total +" "+"You got a 'A' grade" )
+            }
+            else if(ave<90 && ave>=80){
+                console.log(total + "You got a 'B' grade")
+            }
+            else if(ave<80 && ave>=70){
+                console.log(total + "You got a 'C' grade")
+            }
+            else if(ave<70 && ave>=60){
+                console.log(total + "You got a 'D' grade")
+            }
+            else if(ave<60 && ave>=50){
+                console.log(total + "You got a 'E' grade")
+            }
+            else if(ave<49){
+                console.log(total + "You failed in exams and you got a 'R' it means re-exams")
+            }
+        }
+
+        grade()
+
+        function studentinfo(name, rollno, age, std, address){
+            a=name;
+            b=rollno
+            c=age
+            d=std
+            e=address
+            console.log(a+" "+b+" "+c+ " "+d+" "+e)
+        }
+
+        studentinfo("raj", 18001, 20, 11, "street")
+
+       
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function studentinfo(name, rollno, age, std, address){
+            info1=name;
+            info2=rollno
+            info3=age
+            info4=std
+            info5=address
+            
+            console.log("Name:"+info1+" "+"RollNo:"+info2+" "+"Age:"+info3+ " "+"Class:"+info4+" "+"Address:"+info5)
+        }
+        
+        studentinfo("Yogesh;","18TM10;","20;", "12th;", "Thandu mariyamman kovil street,Thenkasi")
+
+
+        function studentsmarks(sub1, sub2, sub3, sub4, sub5){
+            tamil=sub1
+            eng=sub2
+            math=sub3
+            sci=sub4
+            ssci=sub5
+            total=tamil+eng+math+sci+ssci
+            return total
+        }
+
+        var res=studentsmarks(89,93,97,76,83)
+        console.log("TotalMarks:"+res)
+
+        function average(){
+            ave=res/5
+            return ave
+        }
+        var avg=average()
+        console.log("Average:"+avg)
+
+        function grade(){
+            
+            if(avg<=100 && avg>=90){
+                console.log("You got a 'A' grade" )
+            }
+            else if(avg<90 && avg>=80){
+                console.log("You got a 'B' grade")
+            }
+            else if(avg<80 && avg>=70){
+                console.log("You got a 'C' grade")
+            }
+            else if(avg<70 && avg>=60){
+                console.log("You got a 'D' grade")
+            }
+            else if(avg<60 && avg>=50){
+                console.log("You got a 'E' grade")
+            }
+            else if(avg<49){
+                console.log("You failed in exams and you got a 'R' it means re-exams")
+            }
+        }
+
+        grade()
+
+        
+
+    </script>
+</body>
+</html>
