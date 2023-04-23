@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var Booking={
+    PassengerName:"Dinesh",
+    PassengerAge:7,
+    Gender:"Male",
+    Dateofjourney:"03/01/2019",
+    Corporation:"TN-SETC",
+    PlatformNo:2,
+    Tripcode:"1515ULSHE",
+    Passengercategory:"General",
+    BookingId:"jjkiwq381",
+    SeatNo:"13N",
+    Pickuppoint:"Tenkasi",
+    PickupTime:"22:00",
+    Dropingpoint:"Ooty",
+    DropingTime:"6:00",
+    TicketFare:550,
+    info: function (get){
+    agewishe=get
+
+    if(agewishe>1 && agewishe<=5){
+        Booking.TicketFare="infants category:No need tickets"
+    }
+    else if(agewishe>5 && agewishe<=10){
+        Booking.TicketFare=Booking.TicketFare/2
+    }
+    else if(agewishe>10 && agewishe<=18){
+        Booking.TicketFare="Students category: No need tickets"
+    }
+    else if(agewishe>18 && agewishe<=60){
+        Booking.TicketFare;
+    }
+    else if(agewishe>60 && agewishe<=100){
+        Booking.TicketFare=Booking.TicketFare-100
+    }
+}
+
+}
+Booking.info(Booking.PassengerAge)
+
+
+console.log(Booking)
+    </script>
+</body>
+</html>

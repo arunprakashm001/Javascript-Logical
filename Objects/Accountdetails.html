@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Accdetails={}
+        Accdetails.Accouncttype="Savings"
+        Accdetails.CIFnumber="45739YHBSIO"
+        Accdetails.State="Tamilnadu"
+        Accdetails.AccountNo=7290513481
+        Accdetails.IFSCcode="000091678SBI"
+        Accdetails.CustomerName="Moorthy.S"
+        Accdetails.DOB="18/12/1992"
+        Accdetails.BankName="StateBankofIndia"
+        Accdetails.BankBranch="Sivakasi"
+        Accdetails.BranchNumber=150711
+        Accdetails.PhoneNumber=8790654211
+        Accdetails.Email="Trickyguy71@gmail.com"
+        Accdetails.Address="11/B BharathiNagar, Sivakasi"
+        Accdetails.Dateofissue="01/03/2007"
+        Accdetails.Marriagestatus="Married"
+        Accdetails.Amount=5000
+    
+
+
+        console.log(Accdetails)
+
+        function deposite(creadited){
+           
+            Accdetails.Amount=Accdetails.Amount+creadited
+        
+        }
+        deposite(11000)
+
+        function withdraw(Debited){
+            Accdetails.Amount=Accdetails.Amount-Debited
+        }
+        withdraw(3000)
+
+        
+        console.log(Accdetails.Amount)
+
+    </script>
+</body>
+</html>

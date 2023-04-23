@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const person = {
+    name: 'John',
+    age: 30,
+    display: function() {
+        let surname = 'Shnow';
+        console.log('The name is' + ' ' + this.name + ' ' + surname); 
+    }
+};
+
+person.display();
+
+
+    let student = { };
+    student.name = 'John';
+    student.display = function() {
+    console.log('This is new');
+}
+student.display(); 
+
+let school={
+    name:'Greens Hr.Sec.School',
+    location:'Karnataka',
+    eshtablished:'1989',
+    display:function(){
+        console.log(`${school.name} was eshtablished in ${school.eshtablished} at ${school.location}`)
+    }
+}
+school.display()
+
+
+
+    </script>
+</body>
+</html>

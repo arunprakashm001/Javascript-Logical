@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Banking={};
+
+        function details(){
+            Banking.Accouncttype="Savings"
+            Banking.CIFnumber="45739YHBSIO"
+            Banking.State="Tamilnadu"
+            Banking.AccountNo=7290513481
+            Banking.IFSCcode="000091678SBI"
+            Banking.CustomerName="Moorthy.S"
+            Banking.DOB="18/12/1992"
+            Banking.BankName="StateBankofIndia"
+            Banking.BankBranch="Sivakasi"
+            Banking.BranchNumber=150711
+            Banking.PhoneNumber=8790654211
+            Banking.Email="Trickyguy71@gmail.com"
+            Banking.Address="11/B BharathiNagar, Sivakasi"
+            Banking.Dateofissue="01/03/2007"
+            Banking.Marriagestatus="Married"
+            Banking.Amount=2000
+    
+        }
+        details()
+
+        function deposite(dep){
+            Amnt=dep
+            add=Amnt+Banking.Amount
+            return add
+        }
+        Banking.Amount=deposite(12000)
+
+        function withdrawl(draw){
+            dep=draw
+            Banking.Amount=dep-3000
+        }
+        withdrawl(Banking.Amount)
+
+        function interest(Amnt1){
+            get=Amnt1
+
+            if(get>5000 && get<=7000){
+                Banking.Amount=Banking.Amount+400
+            }
+            else if(get>7000 && get<=10000){
+                Banking.Amount=Banking.Amount+600
+            }
+            else if(get>10000 && get<=15000){
+                Banking.Amount=Banking.Amount+800
+            }
+
+        }
+        interest(Banking.Amount)
+
+
+        console.log(Banking)
+
+    </script>
+</body>
+</html>

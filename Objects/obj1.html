@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mycup=new Object();
+        mycup.color="Blue";
+        mycup.height=12;
+        mycup.style="New style";
+
+        console.log(mycup.style)
+
+        let yourcup = {
+            color:"Red",
+            height:17,
+            style:"Ordinary style"
+        }
+        console.log(yourcup.color)
+
+        var recipe={
+            name:"Pancakes",
+            nofpeople:8,
+            timetocook:"17mins",
+            ingredients:"Milk, Eggs, Sugar, Wheatfloar"
+        }
+
+        console.log(recipe)
+
+        function Box(length,breadth,height){
+            let Area=length*breadth*height
+            return Area;
+        }
+        var out=Box(12,3,6)
+        console.log(out)
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Employee={};
+
+        function Employeeinfo(){
+        Employee.name="suresh"
+        Employee.Employeno=17381
+        Employee.department="EV"
+        Employee.allotedwork="Parts assembly"
+        Employee.workingHrs="9Hrs"
+        Employee.intime="8:00Am"
+        Employee.lunchtime="12:00Pm to 12:35Pm"
+        Employee.outtime="5:00Pm"
+        Employee.Weeklyleaveday="Friday"
+        Employee.Experience="4 Years"
+        Employee.overtime=6
+        Employee.Salary=28713
+        }
+        Employeeinfo()
+
+        function charges(Bf,Monthlyallowance,Medicalallowance){
+            info2=Bf
+            info3=Monthlyallowance
+            info4=Medicalallowance
+            add=info2+info3+info4
+            Employee.Salary=Employee.Salary-add
+        }
+        charges(300,250,700)
+
+        function increment(inc){
+            time=inc
+            if(time>1 && time<=2){
+                Employee.incrementedfinalsalary=Employee.Salary+1000
+            }
+            else if(time>2 && time<=4){
+                Employee.incrementedfinalsalary=Employee.Salary+1700
+            }
+            else if(time>4 && time<=7){
+                Employee.incrementedfinalsalary=Employee.Salary+2100
+            }
+            
+        }
+        increment(Employee.overtime)
+
+        
+
+        console.log(Employee)
+
+
+    </script>
+</body>
+</html>

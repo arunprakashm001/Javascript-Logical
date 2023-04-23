@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Booking={};
+
+        function personalinfo(){
+            Booking.PassengerName="Dinesh"
+            Booking.PassengerAge=23
+            Booking.Gender="Male"
+            Booking.Dateofjourney="03/01/2019"
+            Booking.Corporation="TN-SETC"
+            Booking.PlatformNo=2
+            Booking.Tripcode="1515ULSHE"
+            Booking.Passengercategory="General"
+            Booking.BookingId="jjkiwq381"
+            Booking.SeatNo="13N"
+            Booking.Pickuppoint="Tenkasi"
+            Booking.PickupTime="22:00"
+            Booking.Dropingpoint="Ooty"
+            Booking.DropingTime="6:00"
+            Booking.TicketFare=550
+        }
+        personalinfo()
+
+        function age(get){
+            agewishe=get
+
+            if(agewishe>1 && agewishe<=5){
+                Booking.TicketFare="infants category:No need tickets"
+            }
+            else if(agewishe>5 && agewishe<=10){
+                Booking.TicketFare=Booking.TicketFare/2
+            }
+            else if(agewishe>10 && agewishe<=18){
+                Booking.TicketFare="Students category: No need tickets"
+            }
+            else if(agewishe>18 && agewishe<=60){
+                Booking.TicketFare;
+            }
+            else if(agewishe>60 && agewishe<=100){
+                Booking.TicketFare=Booking.TicketFare-100
+            }
+        }
+        age(Booking.PassengerAge)
+
+        function busmaintenance(charge){
+            age=charge
+            if(age>18 && age<=100){
+                Booking.TicketFare=Booking.TicketFare+70
+            }
+            
+        }
+        busmaintenance(Booking.PassengerAge);
+
+        console.log(Booking)
+    </script>
+</body>
+</html>

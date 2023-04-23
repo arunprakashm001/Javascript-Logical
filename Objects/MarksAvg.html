@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var student={};
+
+        function personalinfo(){
+            student.name="Rajesh"
+            student.rollno="117TM9"
+            student.age=19
+            student.std="10th"
+            student.address="185/c, Thiruvalluvar nagar,Nagarkovil"
+            student.height="120cm"
+            student.weight="50kg"
+            student.bloodgroup="AB-(negative)"
+            student.religion="Hindu"
+            student.nationality="India"
+        }
+        personalinfo()
+        
+
+        function mark(sub1,sub2,sub3,sub4,sub5){
+            tam=sub1
+            eng=sub2
+            math=sub3
+            sci=sub4
+            ssci=sub5
+            all = tam+eng+math+sci+ssci
+            return all
+        }
+        student.totalmarks=mark(82,72,79,94,91)
+
+        function Avg(total){
+            msg1=total/5
+            return msg1 
+        }
+        student.Average=Avg(student.totalmarks);
+
+
+        function grd(marks){
+            msg2=marks
+            if(msg2>90 && msg2<=100){
+                student.Grade="You Got a 'A' Grade"
+            }
+            else if(msg2>80 && msg2<=90){
+                student.Grade="You Got a 'B' Grade"
+            }
+            else if(msg2>70 && msg2<=80){
+                student.Grade="You Got a 'C' Grade"
+            } 
+        }
+        grd(student.Average)
+
+       
+
+
+        console.log(student)
+
+
+
+    </script>
+</body>
+</html>

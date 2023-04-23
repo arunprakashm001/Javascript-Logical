@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let studentsdetails={
+            StudName:"Natraj",
+            StudRollNo:"18TM08",
+            Std:"10th",
+            Age:20,
+            Livingat:"yo yo street",
+            city:"kodaikanal",
+            Total:0,
+            Avg:0
+        }
+
+        console.log(studentsdetails)
+
+        function studentsmark(sub1,sub2,sub3,sub4,sub5){
+            Tam=sub1
+            eng=sub2
+            math=sub3
+            sci=sub4
+            ssci=sub5
+            add=Tam+eng+math+sci+ssci
+            return add
+        }
+        studentsdetails.Total=studentsmark(70,84,58,92,72)
+
+        function Avg(){
+            studentsdetails.Avg=studentsdetails.Total/5
+        }
+        Avg()
+
+
+    </script>
+</body>
+</html>

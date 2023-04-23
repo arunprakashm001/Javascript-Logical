@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var BrindhaHotel={};
+
+        function infocollection(){
+            BrindhaHotel.CustomerName="Sarankumar"
+            BrindhaHotel.CustomerAge=34
+            BrindhaHotel.CustomerMobileNo=8859037623
+            BrindhaHotel.CustomerAddress="1/3 Thenaandal Street, Corge"
+            BrindhaHotel.RegularCustomer="Yes"
+            BrindhaHotel.WantedDays=3
+        }
+        infocollection()
+
+        function Booking(Amnt){
+            Days=Amnt
+            if(Days==1){
+                BrindhaHotel.Totalcharge=1200
+            }
+            else if(Days==2){
+                BrindhaHotel.Totalcharge=2400
+            }
+            else if(Days==3){
+                BrindhaHotel.Totalcharge=3600
+            }
+            else if(Days==4){
+                BrindhaHotel.Totalcharge=4800
+            }
+            else if(Days==5){
+                BrindhaHotel.Totalcharge=6000
+            }
+            else if(Days>=6 && Days<=10){
+                BrindhaHotel.Totalcharge=8500
+            }
+        }
+        Booking(BrindhaHotel.WantedDays)
+        
+
+        function customer(info){
+            reg=info
+            if(reg=="Yes"){
+                BrindhaHotel.RegularCustomeroffer=("650Rs/-"+"Actual Charge is:"+BrindhaHotel.Totalcharge)
+                BrindhaHotel.Totalcharge=BrindhaHotel.Totalcharge-650
+                
+            }
+            else{
+                BrindhaHotel.Totalcharge;
+            }
+
+        }
+        customer(BrindhaHotel.RegularCustomer)
+
+
+        function offer(off){
+            wday=off
+            if(wday>2 && wday<=4){
+                BrindhaHotel.FinalAmount=BrindhaHotel.Totalcharge-400
+                BrindhaHotel.OfferAmount=("3 to 4 Days: 400Rs/-")
+            }
+            else if(wday>4 && wday<=6){
+                BrindhaHotel.FinalAmount=BrindhaHotel.Totalcharge-450
+                BrindhaHotel.OfferAmount=("5 to 6 Days: 450Rs/-")
+            }
+            else if(wday>6 && wday<=8){
+                BrindhaHotel.FinalAmount=BrindhaHotel.Totalcharge-500
+                BrindhaHotel.OfferAmount=("7 to 8 Days: 500Rs/-")
+            }
+            else if(wday>8 && wday<=10){
+                BrindhaHotel.FinalAmount=BrindhaHotel.Totalcharge-550
+                BrindhaHotel.OfferAmount=("9 to 10 Days: 550Rs/-")
+            }
+            
+        }
+        offer(BrindhaHotel.WantedDays)
+
+
+        console.log(BrindhaHotel)
+    </script>
+</body>
+</html>

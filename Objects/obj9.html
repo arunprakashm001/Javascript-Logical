@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var supermarket={};
+
+        function customerinfo(){
+            supermarket.customerName="Krishna"
+            supermarket.customerMobileNo=9878690293
+            supermarket.customerEmail="krishna1717@gmail.com"
+            supermarket.customerAddress="7th street, kovai"
+        }
+        customerinfo()
+
+        function product(){
+            supermarket.pen=12
+            supermarket.paste=40
+            supermarket.chocolate=30
+            supermarket.rice=200
+            supermarket.cooldrinks=70
+            supermarket.airfreshner=120
+            supermarket.toys=240
+            supermarket.biscuit=50
+            supermarket.washingbar=178
+            supermarket.chips=35
+            supermarket.Painbalm=45
+        }
+        product()
+
+        function total(){
+            supermarket.Total=supermarket.pen+supermarket.paste+supermarket.chocolate+supermarket.rice+supermarket.cooldrinks+supermarket.airfreshner+supermarket.toys+supermarket.biscuit+supermarket.washingbar+supermarket.chips+supermarket.Painbalm
+        }
+        total()
+
+        function special(off){
+            cash = off
+            if(cash>300 && cash<=500){
+                supermarket.Total=supermarket.Total-50;
+            }
+            else if(cash>500 && cash<=700){
+                supermarket.Total=supermarket.Total-70;
+            }
+            else if(cash>700 && cash<=1000){
+                supermarket.Total=supermarket.Total-100
+            }
+            else if(cash>1000 && cash<=2500){
+                supermarket.Total=supermarket.Total-200
+            }
+
+        }
+        special(supermarket.Total)
+
+        
+        console.log(supermarket)
+
+    </script>
+</body>
+</html>
