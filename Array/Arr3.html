@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="fname" >
+        <input type="checkbox" name="languages" value="Tamil" id="tamil">
+        <label>Tamil</label>
+    
+        <input type="checkbox" name="languages" value="English" id="english">
+        <label>English</label>
+    
+        <input type="checkbox" name="languages" value="Telugu" id="telugu">
+        <label>Telugu</label>
+    </form>
+    <button onclick="getvalue()">SUBMIT</button>
+    <p id="demo"></p>
+
+    
+    <script>
+    function getvalue(){
+        var lang= document.getElementsByName("languages")
+        var newarray = [];
+
+        for(i=0; i<lang.length; i++){
+            if(lang[i].checked){
+            newarray.push(lang[i].value);
+            }
+            document.getElementById("demo").innerHTML = newarray;
+        }
+
+       
+
+        // if(lang1.checked){
+        //     newarray.push(lang1.value);
+        //     console.log(newarray.length);
+        // }
+
+        // var lang2 = document.getElementById("english");
+        // if(lang2.checked){
+        //     newarray.push(lang2.value);
+        //     console.log(newarray.length);
+        // }
+
+        // var lang3 = document.getElementById("telugu");
+        // if(lang3.checked){
+        //     newarray.push(lang3.value);
+        //     console.log(newarray.length);
+        // }
+
+        // if(newarray.length>0){
+        //     document.getElementById("demo").innerHTML=newarray;
+        // }
+        // else{
+        //     document.getElementById("demo").innerHTML="Selected something";
+        // }
+       
+       
+    }
+    </script>
+</body>
+</html>

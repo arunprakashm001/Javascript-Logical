@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <script>
+        var colours = ["red","blue","yellow","green"]
+        document.getElementById("demo1").innerHTML = colours;
+        colours.pop();
+        // colours.push("white")
+        document.getElementById("demo2").innerHTML = colours;
+
+    </script>
+    <hr>
+    
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script>
+        var numbers = [1,2,3,4,5,6]
+        document.getElementById("demo3").innerHTML = numbers;
+        numbers.push(7,8,9);
+        document.getElementById("demo4").innerHTML = numbers;
+    </script>
+    <hr>
+
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <script>
+        var size =["Sbox","Mbox","Lbox","XLbox","2XLbox"]
+        document.getElementById("demo5").innerHTML=size;
+        document.getElementById("demo6").innerHTML=size.shift();
+        document.getElementById("demo7").innerHTML=size;
+    </script>
+    <hr>
+
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <script>
+        var car = ["Ford","Mahindra","Suzuki","Toyota","Tata"];
+        document.getElementById("demo8").innerHTML=car;
+        car.unshift("Tesla");
+        document.getElementById("demo9").innerHTML=car;
+    </script>
+    <hr>
+
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <script>
+        var arr1=["Kim","whitney","Adam","Cersie"]
+        document.getElementById("demo10").innerHTML=arr1;
+        var arr2=["Orange","Apple","Banana","Grapes","Kiwi"]
+        document.getElementById("demo11").innerHTML=arr2;
+        var merg = arr1.concat(arr2);
+        document.getElementById("demo12").innerHTML=merg;
+    </script>
+    <hr>
+
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <p id="demo15"></p>
+    <script>
+        var list =["MiniSweets","Cake","Chocolate","Icecream","Shakes"]
+        document.getElementById("demo13").innerHTML=list;
+        list.splice(2,0,"One","Two","Three");
+        document.getElementById("demo14").innerHTML=list;
+        list.splice(3,2);
+        document.getElementById("demo15").innerHTML=list;
+    </script>
+    <hr>
+
+    <p id="demo16"></p>
+    <p id="demo17"></p>
+    <p id="demo18"></p>
+    <p id="demo19"></p>
+    <p id="demo20"></p>
+    <script>
+        var stuff = ["Pen","Paper","Ink","Pencil","Scale","Eraser","Sharphner","Note","Book","Bag","Bottle","Box"];
+        document.getElementById("demo16").innerHTML=stuff;
+       var slice1 = stuff.slice(2);
+        document.getElementById("demo17").innerHTML=slice1;
+        var slice2 = slice1.slice(3)
+        document.getElementById("demo18").innerHTML=slice2;
+        var slice3 = slice2.slice(4);
+        document.getElementById("demo19").innerHTML=slice3;
+        var slice4 = slice3.slice(2);
+        document.getElementById("demo20").innerHTML=slice4;
+    </script>
+    <hr>
+
+    <p id="demo21"></p>
+    <p id="demo22"></p>
+    <script>
+        var text = "Array are used to store multiple value.";
+        document.getElementById("demo21").innerHTML=text;
+        var myarry = text.split(" ");
+        document.getElementById("demo22").innerHTML=myarry;
+        
+    </script>
+    <hr>
+
+    <p id="demo23"></p>
+    <p id="demo24"></p>
+    <script>
+        var sentence = "Javascript array are resizable and contain mix of different data";
+        document.getElementById("demo23").innerHTML=sentence;
+        var result = sentence.indexOf("resizable");
+        document.getElementById("demo24").innerHTML=result;
+    </script>
+    <hr>
+
+    <p id="demo25"></p>
+    <p id="demo26"></p>
+    <script>
+        var text1 = "The earth is made up of full of sudden miracles,happiness and tragedy";
+        document.getElementById("demo25").innerHTML = text1;
+        var result1 = text1.includes("earth");
+        document.getElementById("demo26").innerHTML = result1;
+    </script>
+</body>
+</html>
