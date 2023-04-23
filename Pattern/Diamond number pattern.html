@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var i,j;
+        var res="";
+        var n=4;
+        for(i=1; i<=4; i++){
+            for(s=1; s<=n-i; s++){
+                res+=" ";
+            }
+            for(j=1; j<=i; j++){
+                res+="* "
+            }
+            if(i==4){
+                res+="\n";
+                for(i=1; i<=n; i++){
+                    for(s=1; s<i; s++){
+                        res+=" ";
+                    }
+                    for(j=i; j<=n-1; j++){
+                        res+=" *";
+                    }
+                    res+="\n";  
+                }
+            }
+            res+="\n";
+        }
+        console.log(res);
+    </script>
+</body>
+</html>
